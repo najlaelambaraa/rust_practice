@@ -1,4 +1,4 @@
- 
+# RUST
 ```
 let ma_valeur_virgule: f64 = 0.3;
     let valeur_entiere: usize = 42;
@@ -31,7 +31,7 @@ let ma_valeur_virgule: f64 = 0.3;
 
 ```
 
-###Exercice 1
+### Exercice 1
 ```
 struct Person{
     name: String, //type stocké dans le heap (tas)
@@ -60,7 +60,7 @@ fn create_person(name: String, age: u8) -> Person {
     println!("{} is {}", p1.name, p1.age);
 
 ```
-###Exercice 2
+### Exercice 2
 
 ```
 fn find_max(numbers: &[i32]) -> Result<i32, String> {
@@ -83,7 +83,7 @@ fn find_max(numbers: &[i32]) -> Result<i32, String> {
     }
 
 ```
-###Exercice 3
+### Exercice 3
 
 ```
 use std::thread; 
@@ -120,7 +120,7 @@ fn print_even_numbers(v: &[i32]) {
 
 
 ```
-###schéma
+### Schéma
 ```
                      buffer
                    /  capacity
