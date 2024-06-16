@@ -1,4 +1,35 @@
+```mermaid
+graph TD
+    subgraph View
+        VC[ViewController]
+    end
 
+    subgraph ViewModel
+        LVM[LocationViewModel]
+        AVM[ARViewModel]
+    end
+
+    subgraph Model
+        LM[LocationManager]
+        ARM[ARManager]
+    end
+
+    subgraph Delegate
+        LMD[LocationManagerDelegate]
+        ARMD[ARManagerDelegate]
+    end
+
+    %% Associations
+    VC --> LVM
+    VC --> AVM
+    LVM --> LM
+    AVM --> ARM
+    LM --> LMD
+    ARM --> ARMD
+
+
+
+```
 
 ## Schéma d'Interaction
 
